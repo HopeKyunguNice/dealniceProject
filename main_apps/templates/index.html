@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,13 +11,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href= "{% static 'css/style.css' %}">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-
-    <!-- custom js file link  -->
-    <script src="js/script.js" defer></script>
-
 </head>
 <body>
     
@@ -27,7 +24,7 @@
     <div id="menu-btn" class="fas fa-bars"></div>
 
     <a data-aos="zoom-in-left" data-aos-delay="150"
-     href="#" class="logo"> <img src="./images/Img_logo/Logi_dealnice.png" style="height: 25; width:170px" alt=""> </a>
+     href="#" class="logo"> <img src="/media/media/3.png" style="height: 25; width:170px" alt=""> </a>
 
     <nav class="navbar">
         <a data-aos="zoom-in-left" data-aos-delay="300" href="#home">HOME</a>
@@ -204,8 +201,11 @@
 <!-- footer section ends -->
 
 
+<!-- custom js file link  -->
+<script src=" {% static 'js/script.js' %}"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
 
 <script>
 
